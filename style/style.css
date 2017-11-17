@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box; 
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;  
+}
+body {
+  margin: 0;
+  font-family: 'Open-Sans', sans-serif;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+header {
+  background-color: #313234;  
+  height: 50px;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+}
+header nav ul li {
+  display: inline-block;  
+}
+header nav ul li a {
+  line-height: 50px;
+  padding: 0 20px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+header nav ul li a:hover {
+  color: #00c9f5;
+}
+header nav img {
+  padding: 10px 0;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.pexels.com/photos/8264/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb) center no-repeat; 
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.slogan {
+  float: right;
+  max-width: 800px;
+  width: 530px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  text-align: left;
+  line-height: 10px;
+  padding: 10px 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+.hero h1 {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 43px;
+}
+.hero h1 b { 
+  font-weight: 700; 
+}
+.circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+[class*='circle-'] {
+  background-color: #807f7d;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  display: inline-block;
+  transition: .4s;
+  cursor: pointer;
+}
+[class*='circle-']:hover {
+  background-color: #fff;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+  float: left;
+} 
+.benefits {
+  margin: 50px auto;
+  text-align: center;
+}
+.benefits .fa {
+  border: 0;
+  color: #fff;
+  background-color: #313332;
+  border-radius: 15%;
+  font-size: 60px;
+  padding: 20px;
+  transition: .4s;
+  cursor: pointer;
+}
+.benefits h2 {
+  color: #012e33;
+  font-size: 20px;
+  transition: .4s;
+  cursor: pointer;
+}
+.benefits p {
+  color: #bebebe;
+  line-height: 30px;
+  padding: 0 40px;
+}
+.benefits-btn:hover .fa {
+  background: #00c7e8;
+}
+.benefits-btn:hover h2 {
+  color:  #00c7e8;
+}
+.content {
+  margin: 50px auto;
+  text-align: center;
+}
+.content h2 {
+  color: #313332;
+  font-size: 35px;
+  font-weight: 800;
+}
+.content p {
+  color: #bebebe;
+  font-size: 20px;
+  padding: 0 100px;
+}
+.gallery {
+  margin: 50px auto;
+}
+.opacity {
+  position: relative;
+  transition: .4s;
+  cursor: pointer;
+}
+.gallery .layer {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.5);
+  position: absolute;
+  display: none;
+}
+.gallery img {
+  max-width: 100%;
+  float: left;
+}
+.gallery .fa {
+  background-color: white;
+  padding: 4px;
+  margin: 4px;
+}
+.gallery .fa-camera-retro {
+    top: calc(50% - 14px);
+    right: calc(50% - 0px);
+    position: absolute;
+}  
+.gallery .fa-search {
+    top: calc(50% - 14px);
+    left: calc(50% - 0px);
+    position: absolute;
+}  
+.opacity:hover .layer {
+  display: block;   
+}
+.team {
+  margin: 100px auto;
+  text-align: center;
+}
+.company {
+  position: relative;
+  transition: .4s;
+  cursor: pointer;
+} 
+.team .photo-size {
+  width: 21.25%;
+    margin-right: 5%;
+}
+.team .last-type {
+  width: 21.25%;
+  margin-right: 0;
+} 
+[class*="person-"] {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-size: cover;
+  text-align: center;
+} 
+.team .person-1 {
+  background: url(https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg?h=350&auto=compress&cs=tinysrgb) center no-repeat; 
+}
+.team .person-2 {
+  background: url(https://images.pexels.com/photos/253758/pexels-photo-253758.jpeg?h=350&auto=compress&cs=tinysrgb) center no-repeat;
+}
+.team .person-3 {
+  background: url(https://images.pexels.com/photos/462680/pexels-photo-462680.jpeg?h=350&auto=compress&cs=tinysrgb) center no-repeat;
+}
+.team .person-4 {
+  background: url(https://images.pexels.com/photos/249761/pexels-photo-249761.jpeg?h=350&auto=compress&cs=tinysrgb) center no-repeat;
+}
+.team .person-layer {
+    float: left;
+  height: 300px;
+  width: 300px;
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+  border-radius: 50%;
+  background-color: rgba(0,0,0, 0.5);
+  position: absolute;
+  display: none;
+}
+.team .person-layer p{
+    margin-top: 44%;
+}
+.company:hover .person-layer {
+  display: block;   
+}
+.team h2 {
+  color: #5c5c5a;   
+  font-weight: 700;
+  font-size: 24px;
+  margin-left: 15%;
+}
+.advert {
+  margin: 50px auto;
+  background: url(https://images.pexels.com/photos/584580/pexels-photo-584580.jpeg?h=350&auto=compress&cs=tinysrgb) center no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+.advert img {
+  max-width: 100%;
+  position: relative;
+  top: 58px;
+}
+.advert h2 {
+  font-weight: 800;
+  font-size: 45px;
+  text-align: left;
+  color: white;
+  position: relative;
+  top: 100px;
+}
+.advert p {
+  font-size: 20px;
+  text-align: left;
+  padding: 15px;
+  color: white;
+  position: relative;
+  top: 90px;
+}
+.numbers {
+  margin: 50px auto;
+  text-align: center;
+}
+.numbers h2 {
+  font-family: 'Chewy';
+  font-size: 65px;
+  color: #323433;
+  margin-bottom: 0;
+}
+.numbers p {
+  font-size: 22px;
+  color: #13c8e3;
+  margin-top: 0;
+  font-weight: 700;
+}
+footer {
+  background-color: #313332;
+  color: white;
+  text-align: left;
+}
+.information {
+  padding-right: 30px;
+}
+.information h2 {
+  font-size: 30px;
+  font-weight: 800;
+  border-bottom: 2px solid white;
+}
+.information span {
+  background: #313332;
+    position: relative;
+    top: 20px;
+    padding-right: 20px;
+}
+.additional-information h3 {
+  font-size: 20px;
+}
+.additional-information p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.additional-information .fa {
+  background-color: #00c8e6;
+  font-size: 18px;
+  padding: 10px;
+  margin: 8px;
+  transition: .4s;
+  cursor: pointer;
+}
+.additional-information .fa:hover {
+  color: #00c8e6;
+  background-color: white;
+}
+.copyrigts {
+  background-color: #252726;
+  color: white;
+  text-align: center;
+}
